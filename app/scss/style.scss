@@ -2,16 +2,38 @@ html  {
     box-sizing: border-box;
 }
 
-*,
 *::before,
 *::after{
     box-sizing:inherit;
 }
-.box{
-    font-size: 12px;
+
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
-    margin-top: 30px;
-    display: flex;
+    box-sizing: border-box;
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    line-height: normal;
 }
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.container {
+    width: 1192px;
+    margin: 0 auto;
+
+}
+
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/tiles';
+@import 'blocks/service';
+@import 'blocks/values';
