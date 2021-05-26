@@ -1,0 +1,44 @@
+.carousel {
+    
+    &__inner {
+        width: 1480px;
+        height: 446px;
+        background-color: #F7F7F7;
+        padding: 117px 40px 85px 40px;
+        margin: 0 auto;
+
+    }
+    &__item {
+        // display: flex;
+        // justify-content: space-between;
+        position: relative;
+        &-title {
+            font-size: 36px;
+            line-height: 28px;
+            color: $dark;
+        }
+
+        &-subtitle {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 28px;
+            color: #828282;
+        }
+
+        &-descr {
+            width: 630px;
+            font-size: 18px;
+            line-height: 32px;
+            color: $dark;
+            margin-top: 40px;
+        }
+        img {
+            display: block;
+            position: absolute;
+            top: -50%;
+            right: 150px;
+            
+        }
+    }
+
+}

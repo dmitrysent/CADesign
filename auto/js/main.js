@@ -1,9 +1,9 @@
 $(function(){
 
     $('.carousel__inner').slick({
-        arrows: true,
-        dots: false,
-        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
         responsive: [
             {
                 breakpoint: 841,

@@ -2,6 +2,8 @@ html  {
     box-sizing: border-box;
 }
 
+
+
 *::before,
 *::after{
     box-sizing:inherit;
@@ -26,7 +28,7 @@ a {
 }
 
 .container {
-    width: 1192px;
+    max-width: 1192px;
     margin: 0 auto;
 
 }
@@ -35,5 +37,11 @@ a {
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/tiles';
+@import 'blocks/carousel';
 @import 'blocks/service';
+@import 'blocks/video';
 @import 'blocks/values';
+@import 'blocks/job';
+@import 'blocks/students';
+@import 'blocks/map';
+@import 'blocks/footer';
