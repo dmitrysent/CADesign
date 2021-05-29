@@ -4,8 +4,8 @@
     position: relative;            
     height: 448px;
     padding-top: 121px;
+    margin-top: 38px;
     &__title {
-        
         font-weight: bold;
         font-size: 36px;
         line-height: 42px;
@@ -26,7 +26,6 @@
         &:hover {
             background-color:#E77E1E;
         }
-        
     }
     &__img {
         position: absolute;

@@ -1,5 +1,6 @@
 html  {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -15,10 +16,6 @@ html  {
     box-sizing: border-box;
     font-family: 'Museo Sans Cyrl', sans-serif;
     line-height: normal;
-}
-
-h1 {
-    margin: 0;
 }
 
 a {
@@ -43,5 +40,6 @@ a {
 @import 'blocks/values';
 @import 'blocks/job';
 @import 'blocks/students';
-@import 'blocks/map';
+@import 'blocks/contacts';
 @import 'blocks/footer';
+@import 'blocks/modal';

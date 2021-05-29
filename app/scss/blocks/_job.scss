@@ -2,6 +2,7 @@
     padding: 64px 0 90px 0;
     text-align: center;
     color: $dark;
+
     &__title {
         font-size: 36px;
         line-height: 45px;
@@ -24,7 +25,12 @@
     &__inner {
         margin-top: 98px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-hidden {
+            display: none;
+        }
+
     }
     &__item {
         width: 376px;
@@ -32,6 +38,8 @@
         border: 1px solid #EBEBEB;
         padding: 66px 70px 64px 70px;
         transition: all .5s;
+        margin-bottom: 30px;
+        
         &-title {
             font-size: 22px;
             line-height: 27px;
@@ -69,20 +77,25 @@
         }
 
     }
+
     &__button {
         margin-top: 56px;
         width: 217px;
         height: 64px;
         background-color: $orange;
-        padding-top: 22px;
         text-align: center;
         color: #FFF;
         font-weight: bold;
         font-size: 16px;
         line-height: 19px;
         transition: all .5s;
+        cursor: pointer;
+        border: none;
         &:hover {
             background-color: #E77E1E;
         }
     }
+
 }
+
+

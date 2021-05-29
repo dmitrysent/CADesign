@@ -1,21 +1,43 @@
 .carousel {
-    
+
+    &-history {
+        padding-bottom: 114px;
+        .slick-prev,
+        .slick-next {
+        background-color: #fff;
+        }
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 28px;
+        font-weight: normal;
+        color: $dark;
+        margin-top: 90px;
+        text-align: center;
+    }
     &__inner {
-        width: 1480px;
+        max-width: 1480px;
         height: 446px;
         background-color: #F7F7F7;
-        padding: 117px 40px 85px 40px;
         margin: 0 auto;
-
+        &-history {
+            margin-top: 87px;
+            box-shadow: 0px 14px 24px rgba(15, 18, 20, 0.1);
+            position: relative;
+            background-color: #fff;
+            background: url(../../images/bg_sl_history.png) no-repeat;
+            background-position: right;
+        }
     }
+
     &__item {
-        // display: flex;
-        // justify-content: space-between;
         position: relative;
+        padding: 117px 40px 85px 142px;
         &-title {
             font-size: 36px;
             line-height: 28px;
             color: $dark;
+            
         }
 
         &-subtitle {
@@ -32,13 +54,50 @@
             color: $dark;
             margin-top: 40px;
         }
-        img {
+        &-img {
             display: block;
             position: absolute;
-            top: -50%;
-            right: 150px;
-            
+            top: -90px;
+            right: 82px;
+            &_history {
+                right: 176px;
+                top: 0;
+            }
+        }
+        
+        &-link {
+            margin-top: 42px;
+            color: $blue;
+            font-size: 16px;
+            line-height: 20px;
         }
     }
 
+}
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    transition: all .5s;
+    cursor: pointer;
+    width: 52px;
+    height: 94px;
+    border: 1px solid #E0E0E0;
+    background-color: #F7F7F7;
+    z-index: 5;
+    &:hover {
+        background-color: #fff;
+        border: none;
+    }
+    img {
+        width: 6px;
+        height: 10px;
+    }
+}
+
+.slick-next {
+    right: 40px;
+    left: auto;
 }

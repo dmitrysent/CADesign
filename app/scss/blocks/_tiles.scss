@@ -5,6 +5,7 @@
         padding: 76px 0 70px 0;
     }
     &__item {
+        
         width: 395px;
         height: 377px;
         border: 1px solid #EDEDED;
@@ -36,8 +37,14 @@
         &:hover &-descr{
             display: block;
         }
-        &:hover img {
-            fill: #fdd;
+        &:hover svg.icon {
+            fill: $orange;
         }
+    }
+    svg.icon {
+        fill: #000000;
+        width: 66px;
+        height: 66px;
+        
     }
 }
