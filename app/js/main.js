@@ -7,7 +7,6 @@ $(function(){
         arrows: true,
         dots: false,
         slidesToShow: 1,
-
     });
 
     $('.tiles__inner').slick({
@@ -22,11 +21,20 @@ $(function(){
                 breakpoint: 769,
                   settings: 'unslick'
             },
+        ]
+    });
+
+    $('.values__inner').slick({
+        mobileFirst: true,
+        speed: 1200,
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
             {
-                breakpoint: 324,
-                settings: {
-                    slidesToShow: 2
-                }
+                breakpoint: 321,
+                  settings: 'unslick'
             },
         ]
     });
@@ -42,16 +50,16 @@ $(function(){
         $('.overlay, #history').fadeIn();
     });
     
-    // закрываем по крестику
+    
     $('.modal__close').on('click', function () {
         $('.overlay, #history').fadeOut('slow');
     });
 
     $('.header__nav-link').on('click', function () {
         $('.header__nav').toggleClass('header__nav-active');
+        $('.hamburger').toggleClass('hamburger-active')
     });
 
-	// Клик по фону, но не по окну (Закрытие)
 	$('.overlay').on('click', function(e) {
 		if ($(e.target).closest('.modal').length == 0) {
 			$(this).fadeOut();					
@@ -64,6 +72,6 @@ $(function(){
 
     $('.hamburger').click(function() {
         $('.header__nav').toggleClass('header__nav-active'),
-        $('.hamburger').toggleClass('hamburger-active');
+        $('.hamburger').toggleClass('hamburger-active')
     });
 });
