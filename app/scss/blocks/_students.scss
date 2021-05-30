@@ -1,6 +1,6 @@
 .students {
     background-color: #F9F9F9;
-    padding: 86px 100px 104px 100px;
+    padding: 86px 104px;
     color: $dark;
     text-align: center;
     &__title {
@@ -17,12 +17,14 @@
         line-height: 27px;
     }
     &__inner {
+        max-width: 1150px;
         margin-top: 84px;
         display: flex;
         justify-content: space-between;
 
     }
     &__item {
+        width: 25%;
         &-icon {
             margin: 0 auto;
             width: 100px;
@@ -43,8 +45,11 @@
         margin-top: 84px;
         font-size: 22px;
         line-height: 27px;
-        a {
+        span {
             color: $blue;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

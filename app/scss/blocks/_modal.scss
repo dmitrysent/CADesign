@@ -7,12 +7,14 @@
     overflow-y: auto;
     z-index: 100;
     display: none;
+    // padding: 100px 40px;
+    // padding: 0 40px 0 40px;
 }
 .modal {
     position: absolute;
     top: 114px;
-    left: 10%;
-    width: 1145px;
+    left: 10%;   
+    max-width: 1145px;
     min-height: 2633px;
     background-color: #f2f2f2;
     &__close {
@@ -21,7 +23,7 @@
         height: 70px;
         background: #E9862A;
         color: #fff;
-        top: calc(50% - 247px);
+        top: calc(50% - 218px);
         right: calc(50% - 614px);
         font-size: 23px;
         line-height: 11px;
@@ -77,6 +79,7 @@
             color: $dark;
         }
         img {
+            width: 100%;
             margin: 40px 0 50px 0;
         }
 
@@ -88,7 +91,7 @@
         &-table {
             margin-top: 50px;
             padding: 42px 41px 41px 43px;
-            width: 856px;
+            width: 100%;
             height: 219px;
             background: rgba(233, 134, 42, 0.02);
             border: 1px solid #E9862A;

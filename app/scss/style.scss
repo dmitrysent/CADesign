@@ -14,7 +14,7 @@ html  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: sans-serif;
     line-height: normal;
 }
 
@@ -25,13 +25,15 @@ a {
 }
 
 .container {
-    max-width: 1192px;
+    max-width: 1212px;
     margin: 0 auto;
+    padding: 0 10px;
 
 }
 
 @import 'base/variables';
 @import 'blocks/header';
+@import 'blocks/hamburger';
 @import 'blocks/main';
 @import 'blocks/tiles';
 @import 'blocks/carousel';
@@ -43,3 +45,4 @@ a {
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/media';

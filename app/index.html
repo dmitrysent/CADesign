@@ -25,6 +25,11 @@
                 </nav>                
             </div>
         </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <section class="main">
         <div class="container">
@@ -135,7 +140,7 @@
     </section>
     <section class="video">
     </section>
-    <section class="values" id="values">
+     <section class="values" id="values">
         <div class="container">
             <h2 class="values__title">Наши ценности</h2>
             <div class="values__inner">
@@ -153,7 +158,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <section class="job" id="job">
         <div class="container">
             <h2 class="job__title">Вакансии</h2>
@@ -180,33 +185,32 @@
                     <p class="job__item-salary">68.000 — 180.000 руб.</p>
                     <a class="job__item-btn" href="#" >Подробнее</a>
                 </div>
-            </div>
-            <div class="job__inner-hidden" id="hidden">
-                <div class="job__item">
+                <div class="job__item job__item-hidden">
                     <p class="job__item-title">Бухгалтер по расчету заработной платы</p>
                     <img src="images/icons/calc2.svg" alt="icon">
                     <p class="job__item-salary">68.000 — 180.000 руб.</p>
                     <a class="job__item-btn" href="#" >Подробнее</a>
                 </div>
-                <div class="job__item">
+                <div class="job__item job__item-hidden">
                     <p class="job__item-title">Бухгалтер по расчету заработной платы</p>
                     <img src="images/icons/calc2.svg" alt="icon">
                     <p class="job__item-salary">ЗП по результатам собеседоваия</p>
                     <a class="job__item-btn" href="#" >Подробнее</a>
                 </div>
-                <div class="job__item">
+                <div class="job__item job__item-hidden">
                     <p class="job__item-title">Бухгалтер по расчету заработной платы</p>
                     <img src="images/icons/calc2.svg" alt="icon">
                     <p class="job__item-salary">68.000 — 180.000 руб.</p>
                     <a class="job__item-btn" href="#" >Подробнее</a>
                 </div>
-                <div class="job__item">
+                <div class="job__item job__item-hidden">
                     <p class="job__item-title">Бухгалтер по расчету заработной платы</p>
                     <img src="images/icons/calc2.svg" alt="icon">
                     <p class="job__item-salary">68.000 — 180.000 руб.</p>
                     <a class="job__item-btn" href="#" >Подробнее</a>
                 </div>
             </div>
+            
             <button class="job__button" href="#" >Больше вакансий</button>
         </div>
     </section>
@@ -240,40 +244,46 @@
                     <p class="students__item-descr">Социальная психология</p>
                 </div>
             </div>
-            <p class="students__send"><a href="">Заполни анкету</a> и отправь нам!</p>
+            <p class="students__send"><span>Заполни анкету</span> и отправь нам!</p>
         </div>
     </section>
     <section class="carousel carousel-history">
         <h2 class="carousel__title">Истории успеха</h2>
         <div class="carousel__inner carousel__inner-history">
-            <div class="carousel__item">
+            <div class="carousel__item carousel__item-history">
                     <p class="carousel__item-title">Татьяна Демьянова</p>
                     <p class="carousel__item-subtitle">Специалист, отдел МСФО, 32 года</p>
                     <p class="carousel__item-descr">«Компания сегодня — это одна из немногих компаний, где действительно делают крутые вещи. »</p>
-                    <a href="#" data-modal="history" class="carousel__item-link">Читать историю</a>
-                    <img class="carousel__item-img carousel__item-img_history" src="/images/people2.png" alt="#">
+                    <p data-modal="history" class="carousel__item-link">Читать историю</p>
+                    <div class="carousel__item-img_history">
+                        <img src="/images/people2.png" alt="#">
+                    </div>
             </div>
-            <div class="carousel__item">
+            <div class="carousel__item carousel__item-history">
                     <p class="carousel__item-title">Татьяна Демьянова</p>
                     <p class="carousel__item-subtitle">Специалист, отдел МСФО, 32 года</p>
                     <p class="carousel__item-descr">«Компания сегодня — это одна из немногих компаний, где действительно делают крутые вещи. »</p>
-                    <a href="#" class="carousel__item-link" id="">Читать историю</a>
-                    <img class="carousel__item-img carousel__item-img_history"  src="/images/people2.png" alt="#">
+                    <p data-modal="history" class="carousel__item-link" id="">Читать историю</p>
+                    <div class="carousel__item-img_history">
+                        <img src="/images/people2.png" alt="#">
+                    </div>
             </div>
-            <div class="carousel__item">
+            <div class="carousel__item carousel__item-history">
                     <p class="carousel__item-title">Татьяна Демьянова</p>
                     <p class="carousel__item-subtitle">Специалист, отдел МСФО, 32 года</p>
                     <p class="carousel__item-descr">«Компания сегодня — это одна из немногих компаний, где действительно делают крутые вещи. »</p>
-                    <a href="#" class="carousel__item-link">Читать историю</a>
-                    <img  class="carousel__item-img carousel__item-img_history" src="/images/people2.png" alt="#">
-            </div>
+                    <p data-modal="history" class="carousel__item-link">Читать историю</p>
+                    <div class="carousel__item-img_history">
+                        <img src="/images/people2.png" alt="#">
+                    </div>
+                </div>
         </div>
     </section>  
     <section class="contacts">
         <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aae046dba9058d4fec4155f57999271cbf9027556a7ea8179368de62ab6313b01&amp;source=constructor" width="100%" height="632" frameborder="0"></iframe> -->
         <div class="contacts__inner" id="contacts">
             <div class="contacts__inner-img">
-                <img src="images/icons/education.svg" alt="img">
+                <img src="images/icons/contacts.svg" alt="img">
             </div>
             <p class="contacts__inner-descr">Отдел подбора персонала: </p>
             <a class="contacts__inner-tel" href="tel:+78007008000">8 800 700 8000</a>
@@ -281,16 +291,16 @@
             <a class="contacts__inner-button" href="#">Cтать частью команды</a>
             <div class="contacts__social">
                 <div class="contacts__social-item">
-                    <img src="" alt="#">
+                    <img src="images/icons/vk.svg" alt="#">
                 </div>
                 <div class="contacts__social-item">
-                    <img src="" alt="#">
+                    <img src="images/icons/odn.svg" alt="#">
                 </div>
                 <div class="contacts__social-item">
-                    <img src="" alt="#">
+                    <img src="images/icons/fb.svg" alt="#">
                 </div>
                 <div class="contacts__social-item">
-                    <img src="" alt="#">
+                    <img src="images/icons/inst.svg" alt="#">
                 </div>
             </div>
         </div>
@@ -298,6 +308,7 @@
     <footer class="footer">
         <address class="footer__address" >© 1998–2019,«Компания», 53002, Иваново, Лежневская 34 корпус 1</address>
         <a class="footer__link" href="#">Политика обработки персональных данных</a>
+        <div class="footer__img"><img src="images/logo_footer.png" alt="logo"></div>
     </footer>
 
     <div class="overlay">

@@ -7,39 +7,48 @@ $(function(){
         arrows: true,
         dots: false,
         slidesToShow: 1,
+
+    });
+
+    $('.tiles__inner').slick({
+        mobileFirst: true,
+        speed: 1200,
+        arrows: false,
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         responsive: [
             {
-                breakpoint: 841,
+                breakpoint: 769,
+                  settings: 'unslick'
+            },
+            {
+                breakpoint: 324,
                 settings: {
                     slidesToShow: 2
                 }
             },
-            {
-                breakpoint: 601,
-                settings: {
-                    slidesToShow: 1
-                    }
-            },
         ]
     });
 
-});
 
-// $(document).ready(function(){
-//     $(".job__button").click(function(){
-//         $("#hidden").slideToggle("slow");
-//         return false;
-//     });
-// });
+    // $(window).on('resize', function() {
+    //     $('.tiles__inner').slick('resize');
+    //     setTimeout(function() {window.location.reload();}, 1);
+    // });
 
-$('[data-modal=history]').on('click', function() {
+
+    $('[data-modal=history]').on('click', function() {
         $('.overlay, #history').fadeIn();
-
     });
     
     // закрываем по крестику
     $('.modal__close').on('click', function () {
         $('.overlay, #history').fadeOut('slow');
+    });
+
+    $('.header__nav-link').on('click', function () {
+        $('.header__nav').toggleClass('header__nav-active');
     });
 
 	// Клик по фону, но не по окну (Закрытие)
@@ -49,14 +58,12 @@ $('[data-modal=history]').on('click', function() {
 		}
 	});	
 
-    // $('.job__button').click(function(){
-    //     $(".job__inner-hidden").fadeIn(100);
-    // });  
+    $('.job__button').click(function(){
+        $(".job__item-hidden").addClass('job__item-active');
+    });
 
-$('.job__button').click(function(){
-         $(".job__inner-hidden").css({"display":"flex",
-                                    "flex-wrap":"wrap",
-                                    "justify-content": "space-between",
-                                    })
-     });
-
+    $('.hamburger').click(function() {
+        $('.header__nav').toggleClass('header__nav-active'),
+        $('.hamburger').toggleClass('hamburger-active');
+    });
+});
